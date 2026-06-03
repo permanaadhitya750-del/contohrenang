@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <title>Toyo Lembah Hijau | Kolam Renang & Vila Premium - Liburan Keluarga Asri</title>
+  <!-- Tailwind CSS CDN with responsive config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Tailwind custom configuration */
+    @layer utilities {
+      .text-balance {
+        text-wrap: balance;
+      }
+    }
+  </style>
+</head>
+
+  <!-- Chatbot Widget - AI Powered -->
+  <div id="chatbot-widget" class="chatbot-hidden">
+    <div class="chatbot-button" id="chatbot-toggle">
+      <i class="fas fa-comment-dots"></i>
+      <span class="chatbot-badge">1</span>
+    </div>
+    
+    <div class="chatbot-container" id="chatbot-container">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div>
+            <h4>AI Assistant Toyo</h4>
+            <p class="chatbot-status">Online • AI Siap Membantu</p>
+          </div>
+        </div>
+        <button id="chatbot-close" class="chatbot-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot-message">
+          <div class="message-bubble">
+            <div class="typing-animation">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbot-input" placeholder="Tanyakan apapun tentang Toyo Lembah Hijau..." class="chatbot-input">
+        <button id="chatbot-send" class="chatbot-send">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<body class="font-sans antialiased overflow-x-hidden">
+
+  <!-- HERO SECTION - Responsive -->
+  <section id="hero" class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 z-10"></div>
+      <img src="https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+           alt="Kolam Renang Toyo Lembah Hijau"
+           class="w-full h-full object-cover object-center scale-105">
+    </div>
+    
+    <div class="relative z-20 container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 text-center text-white">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight max-w-5xl mx-auto animate-fadeInUp text-balance">
+        Kesegaran Alami & Kenyamanan Berlibur di Toyo Lembah Hijau
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-white/90 mt-4 sm:mt-6 max-w-2xl mx-auto animate-fadeInUp animation-delay-200 px-2">
+        Nikmati keseruan kolam renang yang luas nan asri dipadukan dengan kenyamanan vila privat untuk momen tak terlupakan bersama keluarga.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-6 sm:mt-8 animate-fadeInUp animation-delay-400 px-4">
+        <a href="#villa" class="btn-primary inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300">
+          <i class="fas fa-calendar-check text-sm sm:text-base"></i> Pesan Vila Sekarang
+        </a>
+        <a href="#location" class="btn-secondary inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300">
+          <i class="fas fa-map-marker-alt text-sm sm:text-base"></i> Lihat Rute & Lokasi
+        </a>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+      <i class="fas fa-chevron-down text-white text-xl sm:text-2xl"></i>
+    </div>
+  </section>
+
+  <!-- TENTANG KAMI - Responsive -->
+  <section id="about" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#FDFBF7] via-white to-[#FDFBF7] relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-[#0D9488]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-56 sm:w-72 md:w-80 h-56 sm:h-72 md:h-80 bg-[#16A34A]/5 rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div class="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 items-center">
+        <div class="lg:w-1/2 w-full" data-aos="fade-right" data-aos-duration="1000">
+          <div class="inline-flex items-center gap-2 bg-[#0D9488]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-4 sm:mb-6">
+            <i class="fas fa-leaf text-[#0D9488] text-xs sm:text-sm"></i>
+            <span class="text-[#0D9488] font-semibold text-xs sm:text-sm uppercase tracking-wide">Tentang Kami</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#14532D] mb-4 sm:mb-6 leading-tight">
+            Liburan Keluarga <span class="text-[#0D9488]">Lengkap</span> dalam Satu Tempat
+          </h2>
+          <p class="text-gray-700 leading-relaxed text-base sm:text-lg mb-4 sm:mb-6">
+            Toyo Lembah Hijau hadir sebagai surga tersembunyi yang memadukan keseruan <span class="font-semibold text-[#0D9488]">kolam renang dengan wahana air</span> dan kenyamanan menginap di vila privat premium. 
+            Dirancang untuk keluarga maupun grup yang ingin melepas penat tanpa harus bepergian jauh dari kota.
+          </p>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base mb-6 sm:mb-8">
+            Dengan konsep <span class="font-semibold text-[#16A34A]">"asri tropis modern"</span>, setiap sudut dirancang agar Anda bisa menikmati udara segar, pepohonan rindang, serta fasilitas premium. 
+            Berenang sepuasnya, bersantai di gazebo, lalu bermalam di vila nyaman – semua dalam satu kawasan eksklusif.
+          </p>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8">
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#0D9488]/10 rounded-xl flex items-center justify-center">
+                <i class="fas fa-swimmer text-[#0D9488] text-base sm:text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-[#14532D] text-base sm:text-lg">3+</p>
+                <p class="text-gray-500 text-xs sm:text-sm">Kolam Renang</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#0D9488]/10 rounded-xl flex items-center justify-center">
+                <i class="fas fa-home text-[#0D9488] text-base sm:text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-[#14532D] text-base sm:text-lg">12+</p>
+                <p class="text-gray-500 text-xs sm:text-sm">Vila Eksklusif</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#0D9488]/10 rounded-xl flex items-center justify-center">
+                <i class="fas fa-smile text-[#0D9488] text-base sm:text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-[#14532D] text-base sm:text-lg">5K+</p>
+                <p class="text-gray-500 text-xs sm:text-sm">Pengunjung</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-3">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#0D9488]/10 rounded-xl flex items-center justify-center">
+                <i class="fas fa-tree text-[#16A34A] text-base sm:text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-[#14532D] text-base sm:text-lg">2.5 Ha</p>
+                <p class="text-gray-500 text-xs sm:text-sm">Area Hijau</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#villa" class="inline-flex items-center gap-2 text-[#0D9488] font-semibold hover:gap-3 transition-all text-sm sm:text-base">
+            Jelajahi Vila Kami <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        
+        <div class="lg:w-1/2 w-full relative mt-8 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+          <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://i.pinimg.com/1200x/b9/be/14/b9be140bf8930ced627c6875b90d4452.jpg" 
+                 alt="Suasana asri Toyo Lembah Hijau"
+                 class="w-full h-auto object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-4 -left-3 sm:-bottom-6 sm:-left-6 bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-4 max-w-[200px] sm:max-w-xs" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-center gap-1 sm:gap-3">
+              <div class="text-yellow-400 text-xs sm:text-base">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="font-bold text-[#14532D] text-sm sm:text-base">4.9/5</span>
+            </div>
+            <p class="text-gray-600 text-xs sm:text-sm mt-1 sm:mt-2">"Liburan terbaik bersama keluarga!"</p>
+            <p class="text-gray-400 text-[10px] sm:text-xs mt-0.5 sm:mt-1">- Keluarga Budiman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASILITAS UTAMA - Responsive Grid -->
+  <section id="amenities" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white relative">
+    <div class="container mx-auto px-4 sm:px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 bg-[#0D9488]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-3 sm:mb-4">
+          <i class="fas fa-star-of-life text-[#0D9488] text-xs sm:text-sm"></i>
+          <span class="text-[#0D9488] font-semibold text-xs sm:text-sm uppercase tracking-wide">Fasilitas Premium</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#14532D] mb-3 sm:mb-4 text-balance">Kenikmatan Tanpa Batas</h2>
+        <p class="text-gray-600 text-base sm:text-lg px-2">Semua fasilitas dirancang untuk kenyamanan maksimal Anda & keluarga</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8">
+        <!-- Fasilitas 1 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="0">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-water text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Kolam Renang Dewasa & Anak</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Kolam jernih dengan sistem sirkulasi modern, dilengkapi perosotan air dan area khusus anak yang aman.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>Water Slide</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas 2 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-home text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Vila Privat yang Nyaman</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Desain estetik minimalis tropis, fasilitas lengkap (AC, TV, dapur kecil), pemandangan langsung ke hijauan.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>Private Terrace</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas 3 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-umbrella-beach text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Area Bersantai & Gazebo</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Gazebo rindang di tepi kolam, tempat bersantai keluarga sambil menikmati angin pegunungan.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>Free WiFi</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas 4 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-camera text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Spot Foto Instagramable</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Dinding tropis, kolam infinity, ayunan bambu – setiap sudut instagramable untuk koleksi liburan Anda.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>Instagramable</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas 5 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-mosque text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Fasilitas Umum</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Kantin dengan menu lokal, musholla luas, kamar bilas, toilet bersih, dan area parkir aman.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>Musholla & Kantin</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fasilitas 6 -->
+        <div class="amenity-card group" data-aos="fade-up" data-aos-delay="500">
+          <div class="relative bg-gradient-to-br from-white to-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full">
+            <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-[#0D9488]/5 rounded-full blur-2xl group-hover:bg-[#0D9488]/10 transition"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#0D9488] to-[#0F766E] rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-shield-alt text-white text-xl sm:text-2xl md:text-3xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-[#14532D] mb-2 sm:mb-3">Keamanan 24 Jam</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">Area parkir lega, sistem keamanan CCTV, petugas keamanan siaga 24 jam untuk kenyamanan Anda.</p>
+            <div class="mt-3 sm:mt-4 flex items-center gap-2 text-[#0D9488] text-xs sm:text-sm">
+              <i class="fas fa-check-circle"></i>
+              <span>CCTV & Security 24 Jam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG VILA - HANYA SATU VILA Responsive -->
+  <section id="villa" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-[#FDFBF7] to-white relative">
+    <div class="container mx-auto px-4 sm:px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 bg-[#0D9488]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-3 sm:mb-4">
+          <i class="fas fa-building text-[#0D9488] text-xs sm:text-sm"></i>
+          <span class="text-[#0D9488] font-semibold text-xs sm:text-sm uppercase tracking-wide">Akomodasi</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#14532D] mb-3 sm:mb-4 text-balance">Vila Eksklusif Pilihan</h2>
+        <p class="text-gray-600 text-base sm:text-lg px-2">Tinggal lebih nyaman dengan view terbaik dan fasilitas lengkap</p>
+      </div>
+      
+      <!-- Single Villa Card - Responsive -->
+      <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 relative overflow-hidden h-64 sm:h-80 md:h-auto">
+              <img src="https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                   alt="Vila Keluarga Premium" 
+                   class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+              <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0D9488] text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
+                Best Seller
+              </div>
+            </div>
+            <div class="md:w-1/2 p-5 sm:p-6 md:p-8">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#14532D]">Vila Keluarga Premium</h3>
+                <div class="text-yellow-400 text-sm sm:text-base">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <p class="text-gray-500 text-sm sm:text-base mb-3 sm:mb-4"><i class="fas fa-users text-[#0D9488] mr-2"></i> Kapasitas: 4-6 Orang</p>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+                <span class="bg-gray-100 text-gray-700 text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"><i class="fas fa-wind mr-1"></i> AC</span>
+                <span class="bg-gray-100 text-gray-700 text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"><i class="fas fa-wifi mr-1"></i> WiFi</span>
+                <span class="bg-gray-100 text-gray-700 text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"><i class="fas fa-kitchen-set mr-1"></i> Dapur</span>
+                <span class="bg-gray-100 text-gray-700 text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"><i class="fas fa-tv mr-1"></i> Smart TV</span>
+                <span class="bg-gray-100 text-gray-700 text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"><i class="fas fa-hot-tub mr-1"></i> Bathtub</span>
+              </div>
+              <p class="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                Vila dengan 2 kamar tidur, ruang keluarga luas, dapur lengkap, dan teras pribadi dengan pemandangan hijau. 
+                Cocok untuk liburan keluarga atau rombongan kecil.
+              </p>
+              <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t pt-4 sm:pt-5">
+                <div>
+                  <p class="text-gray-400 text-xs sm:text-sm">Mulai dari</p>
+                  <p class="text-2xl sm:text-3xl font-bold text-[#0D9488]">Rp 850K <span class="text-sm text-gray-400">/malam</span></p>
+                </div>
+                <button class="villa-cta bg-[#0D9488] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:bg-[#0F766E] transition-all hover:shadow-lg w-full sm:w-auto">
+                  Cek Ketersediaan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI FOTO - Responsive Masonry -->
+  <section id="gallery" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white relative">
+    <div class="container mx-auto px-4 sm:px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 bg-[#0D9488]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-3 sm:mb-4">
+          <i class="fas fa-images text-[#0D9488] text-xs sm:text-sm"></i>
+          <span class="text-[#0D9488] font-semibold text-xs sm:text-sm uppercase tracking-wide">Galeri Momen</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#14532D] mb-3 sm:mb-4 text-balance">Kenangan Indah di Setiap Sudut</h2>
+        <p class="text-gray-600 text-base sm:text-lg px-2">Keindahan kolam, keceriaan pengunjung, dan kenyamanan vila dalam satu bingkai</p>
+      </div>
+      
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-item gallery-item--large">
+          <img src="https://images.pexels.com/photos/1405619/pexels-photo-1405619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kolam jernih">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Kolam Jernih</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/3771803/pexels-photo-3771803.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Keluarga bermain air">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Kebersamaan</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Interior vila mewah">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Interior Vila</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/2635678/pexels-photo-2635678.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gazebo rindang">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Gazebo</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Perosotan air">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Water Slide</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/1578116/pexels-photo-1578116.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Spot foto estetik">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Spot Foto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI & KONTAK - FOOTER Responsive -->
+  <footer id="location" class="bg-[#14532D] text-white relative">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-0 left-0 w-48 sm:w-64 h-48 sm:h-64 bg-white rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-[#0D9488] rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 sm:px-6 md:px-12 relative z-10 py-12 sm:py-16">
+      <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
+        <!-- Maps Section -->
+        <div data-aos="fade-right">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-3">
+            <i class="fas fa-map-pin text-[#0D9488] text-2xl sm:text-3xl"></i>
+            Lokasi & Rute
+          </h3>
+          <div class="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-56 sm:h-64 md:h-80 w-full">
+            <iframe class="w-full h-full" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0326343384244!2d110.40490311477336!3d-7.781713794376932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a9b8b6f6e6b%3A0x4b5f6e7d8c9a0b1c!2sYogyakarta!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" 
+              style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div class="mt-4 sm:mt-6 flex items-start gap-3">
+            <i class="fas fa-location-dot text-[#0D9488] text-lg sm:text-xl mt-1"></i>
+            <div>
+              <p class="font-semibold text-sm sm:text-base">Yogyakarta</p>
+              <p class="text-gray-200 text-xs sm:text-sm">Yogyakarta, Kota Yogyakarta, Daerah Istimewa Yogyakarta</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact & Info -->
+        <div data-aos="fade-left">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Hubungi Kami</h3>
+          
+          <div class="space-y-3 sm:space-y-4">
+            <div class="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm">
+              <i class="fas fa-clock text-[#0D9488] text-xl sm:text-2xl"></i>
+              <div>
+                <p class="font-semibold text-sm sm:text-base">Jam Operasional</p>
+                <p class="text-gray-200 text-xs sm:text-sm">Kolam Renang: Setiap Hari, 08.00 - 17.00 WIB</p>
+                <p class="text-gray-200 text-xs sm:text-sm">Resepsionis Villa: 24 Jam</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm group hover:bg-white/10 transition">
+              <i class="fab fa-whatsapp text-green-400 text-xl sm:text-2xl"></i>
+              <div>
+                <p class="font-semibold text-sm sm:text-base">WhatsApp Fast Response</p>
+                <a href="https://wa.me/6281234567890" target="_blank" class="text-gray-200 hover:text-[#0D9488] transition text-sm">+62 812-3456-7890</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm group hover:bg-white/10 transition">
+              <i class="fab fa-instagram text-pink-400 text-xl sm:text-2xl"></i>
+              <div>
+                <p class="font-semibold text-sm sm:text-base">Instagram</p>
+                <a href="#" class="text-gray-200 hover:text-[#0D9488] transition text-sm">@toyolembahhijau</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm group hover:bg-white/10 transition">
+              <i class="fas fa-envelope text-[#0D9488] text-xl sm:text-2xl"></i>
+              <div>
+                <p class="font-semibold text-sm sm:text-base">Email Reservasi</p>
+                <a href="mailto:reservasi@toyolembah.com" class="text-gray-200 hover:text-[#0D9488] transition text-sm">reservasi@toyolembah.com</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+            <p class="text-xs sm:text-sm text-gray-300 text-center sm:text-left">&copy; 2026 Toyo Lembah Hijau. All Rights Reserved.</p>
+            <div class="flex gap-2 sm:gap-3">
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#0D9488] transition-all"><i class="fab fa-facebook-f text-sm sm:text-base"></i></a>
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#0D9488] transition-all"><i class="fab fa-instagram text-sm sm:text-base"></i></a>
+              <a href="#" class="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#0D9488] transition-all"><i class="fab fa-tiktok text-sm sm:text-base"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
